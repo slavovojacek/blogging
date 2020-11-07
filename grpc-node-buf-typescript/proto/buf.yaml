@@ -1,0 +1,15 @@
+# See https://docs.buf.build/tour-1#add-a-basic-configuration-file.
+
+version: v1beta1
+
+build:
+  roots:
+    - .
+
+lint:
+  use:
+    - DEFAULT # the current strictest possible
+
+breaking:
+  use:
+    - WIRE_JSON
